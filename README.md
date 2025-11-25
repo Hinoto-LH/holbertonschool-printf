@@ -6,7 +6,7 @@ This project is a simulation of the printf function in C with its most important
 ### **description de la fonction printf**
 La fonction printf() formate et imprime une série de caractères et de valeurs dans le flux de sortie standard stdout . Les spécifications de format, commençant par le signe de pourcentage (%), déterminent le format de sortie pour toute liste d'arguments suivant la chaîne de format.
 ## **compilation**
-we will compil the code using this command
+we will compile the code using this command
 ```bash
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
@@ -15,7 +15,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 ## **Requirements**
 
-these are the requirements that we had for this project:
+### **Requirements for the project**
 
 **1. Text Editor:** you are allowed to use vi, vim, nano and emacs to modify the code
 
@@ -36,13 +36,15 @@ these are the requirements that we had for this project:
 
 **6. Header Inclusion:** Include the "main.h" header file in all .c files to access necessary declarations and definitions.
 
+### **Requirements for the function**
+
 _printf.c
 
 Version langage : je pense 99
 
-Her functions :
+## **Her functions**
 
-Flowchart
+## **Flowchart**
 
 
 ## **Example Usage**
