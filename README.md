@@ -45,9 +45,7 @@ Her functions :
 Flowchart
 
 
-Exemple d'utilisation
-
-**Example Usage**
+## **Example Usage**
 
 **Consider the following input code:**
 
