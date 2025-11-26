@@ -6,7 +6,6 @@ This project is a simulation of the printf function in C with its most important
 ### **description de la fonction printf**
 La fonction printf() formate et imprime une série de caractères et de valeurs dans le flux de sortie standard stdout . Les spécifications de format, commençant par le signe de pourcentage (%), déterminent le format de sortie pour toute liste d'arguments suivant la chaîne de format.
 ## **compilation**
-<<<<<<< HEAD
 we will compile the code using this command
 ```bash
 
@@ -38,20 +37,11 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 **6. Header Inclusion:** Include the "main.h" header file in all .c files to access necessary declarations and definitions.
 
 ### **Requirements for the function**
-=======
-we will compil the code using this command
-> gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
-
-## **Requirements**
-### **General**
-
->>>>>>> origin/main
 
 _printf.c
 
 Version langage : je pense 99
 
-<<<<<<< HEAD
 ## **Her functions**
 
 ## **Flowchart**
@@ -121,11 +111,6 @@ Unsigned octalCreate a Printf Function
 
 Currently  _printf can print the chars, the strings and the “%”, note that we are too NULL
 to develop more features for our function, if you wish to display more content (for example : %f for float) please use the reel printf function.
-=======
 Her functions :
 
-Flowchart
 
-
-Exemple d'utilisation
->>>>>>> origin/main
