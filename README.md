@@ -107,3 +107,7 @@ Unsigned octal:[20000001777]
 Unsigned octalCreate a Printf Function
 
 ```
+## **BUGS**
+
+Currently  _printf can print the chars, the strings and the “%”, note that we are too NULL
+to develop more features for our function, if you wish to display more content (for example : %f for float) please use the reel printf function.
