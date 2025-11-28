@@ -1,28 +1,43 @@
 #include "main.h"
-
+#include <unistd.h>
+#include <stdarg.h>
+#include <stdlib.h>
 /**
  * print_char - prints a character
  * @c: character to print
  */
-void print_char(char c)
+int print_char(va_list args)
 {
+	char c = (char)va_arg(args, int);
 	(write(1, &c, 1));
+	return (1);
 }
 
 /**
  * print_str - prints a string
  * @format: string to print
  */
-void print_str(char format)
+int print_str(va_list string)
 {
-	(write(1, &format, 1));
+	int c = 0;
+
+    if (c == '\0')
+    {
+        return (-1);
+    }
+
+    for (; string[c] != '\0'; c++)
+    {
+    	write(1, &c, 1);
+    }
+	return (0);
 }
 
 /**
  * print_dec - prints a decimal
  * @d: decimal character to print
  */
-void print_dec(int i)
+/**int print_dec(int i)
 {
 	char m = '-';
 
@@ -33,15 +48,16 @@ void print_dec(int i)
 	}
 	else
 	{
-		write(1, &i, 1);
+		(write(1, &i, 1));
 	}
+    return (0);
 }
 
-/**
+
  * print_int - prints an integer
  * @i: integer to print
- */
-void print_int(int i)
+
+int print_int(int i)
 {
 	char m = '-';
 
@@ -55,3 +71,4 @@ void print_int(int i)
 		write(1, &i, 1);
 	}
 }
+ */

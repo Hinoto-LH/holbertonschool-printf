@@ -1,23 +1,26 @@
 #include "main.h"
-
+#include <unistd.h>
+#include <stdarg.h>
+#include <stdlib.h>
 /**
-*_printf - function that print
-* @format: 
+* _printf - function that print
+* @format: dscd
+* Return: cbjhsdbdcsd
 */
 int _printf(const char *format, ...)
 {
 	va_list args;
 
 	int index = 0;
-	int inc = 0;
+	int j;
 	int count = 0;
 
-	Choise_s Choises[] = {
-		{"c", print_char},
-		{"s", print_str},
-		{"d", print_dec},
-		{"i", print_int},
-		{"\0", NULL}
+	Specifier SpeciArray[] = {
+		{'c', print_char},
+		{'s', print_str},
+		{'\0', NULL}
+		/**{'d', print_dec},
+		{'i', print_int}*/
 	};
 
 	if (format == NULL)
@@ -32,20 +35,18 @@ int _printf(const char *format, ...)
 	{
 		if (format[index] == '%')
 		{
-			index++;
-			if (format[index] == '\0')
+			index++; /** pour passer au character suivant */
+			for (j = 0; SpeciArray[j].Choise != '\0'; j++)
 			{
-				var_end(args);
-				return (-1);
+				if (format[index] == SpeciArray[j].Choise)
+				{
+					count += SpeciArray[j].func(args);
+				}
 			}
 		}
+		index++;
+		return (count);
 	}
-	for (; Choises[inc].Choise != '\0'; inc++)
-	{
-		if (format[index] == Choises[inc].Choise)
-		{
-			count += Choises[inc].func(args);
-			break;
-		}
-	}
+	va_end(args);
+	return (count);
 }
