@@ -19,18 +19,18 @@ int print_char(va_list args)
  */
 int print_str(va_list string)
 {
-	int c = 0;
-
-    if (c == '\0')
+    int c = 0;
+    char *s;
+    s = va_arg(string, char *);
+    if (s == NULL)
     {
-        return (-1);
+        s = "(null)";
     }
-
-    for (; string[c] != '\0'; c++)
+    for (; s[c] != '\0'; c++)
     {
-    	write(1, &c, 1);
+        write(1, &s[c], 1);
     }
-	return (0);
+    return (c);
 }
 
 /**
