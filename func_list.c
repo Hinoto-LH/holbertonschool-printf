@@ -15,16 +15,26 @@ void print_char(char c)
  */
 void print_str(char format)
 {
-	(write(1, format, 1));
+	(write(1, &format, 1));
 }
 
 /**
  * print_dec - prints a decimal
  * @d: decimal character to print
  */
-void print_dec(char d)
+void print_dec(int i)
 {
-	(write(1, d, 1));
+	char m = '-';
+
+	if (i < 0)
+	{
+		write(1, &m, 1);
+		write(1, &i, 1);
+	}
+	else
+	{
+		write(1, &i, 1);
+	}
 }
 
 /**
@@ -38,10 +48,10 @@ void print_int(int i)
 	if (i < 0)
 	{
 		write(1, &m, 1);
-		write(1, i, 1);
+		write(1, &i, 1);
 	}
 	else
 	{
-		write(1, i, 1);
+		write(1, &i, 1);
 	}
 }

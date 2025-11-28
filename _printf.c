@@ -6,47 +6,46 @@
 */
 int _printf(const char *format, ...)
 {
-	Choise Choises [] = {
+	va_list args;
+
+	int index = 0;
+	int inc = 0;
+	int count = 0;
+
+	Choise_s Choises[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"d", print_dec},
 		{"i", print_int},
-		{NULL, NULL}
+		{"\0", NULL}
 	};
 
-	int index = 0;
-	int inc = 0;
-	if (format)
-	/*si format n'est pas NULL*/
+	if (format == NULL)
 	{
-		while (format[index] != '\0')
-		{
-			/** if (format[index] != '%')
-			{
-			}
-				char c = va_arg(args, int);
-
-				index += 2; */
-				/**if (format[index] == '%')*/
-				{
-				write(1, format, 1);
-				}
-			format++;
-		}
-	}
-	if (format)
-	{
-		while (format[index])
-		{
-			if (format[index] == '%')
-			{
-				inc++;
-				if (index == 'c')
-			}
-			write(1, format, 1);
-		}
-		format ++;
+		return (-1);
 	}
 
-return (index);
+	va_start(args, format);
+
+
+	while (format[index] != '\0')
+	{
+		if (format[index] == '%')
+		{
+			index++;
+			if (format[index] == '\0')
+			{
+				var_end(args);
+				return (-1);
+			}
+		}
+	}
+	for (; Choises[inc].Choise != '\0'; inc++)
+	{
+		if (format[index] == Choises[inc].Choise)
+		{
+			count += Choises[inc].func(args);
+			break;
+		}
+	}
 }
