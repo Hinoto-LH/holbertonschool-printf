@@ -18,6 +18,7 @@ int _printf(const char *format, ...)
 	Specifier SpeciArray[] = {
 		{'c', print_char},
 		{'s', print_str},
+		{'%', print_per},
 		{'\0', NULL}
 		/**{'d', print_dec},
 		{'i', print_int}*/
@@ -36,6 +37,7 @@ int _printf(const char *format, ...)
 		if (format[index] == '%')
 		{
 			index++; /** pour passer au character suivant */
+			
 			for (j = 0; SpeciArray[j].Choise != '\0'; j++)
 			{
 				if (format[index] == SpeciArray[j].Choise)
@@ -44,8 +46,12 @@ int _printf(const char *format, ...)
 				}
 			}
 		}
+		else
+		{
+			write(1, &format[index], 1);
+			count++;
+		}
 		index++;
-		return (count);
 	}
 	va_end(args);
 	return (count);
