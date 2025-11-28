@@ -17,6 +17,5 @@ int print_char(va_list args);
 int print_str(va_list args);
 int print_dec(int i);
 int print_int(int i);
-int print_per(va_list args);
 
 #endif
