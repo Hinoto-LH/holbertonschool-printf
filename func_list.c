@@ -71,4 +71,13 @@ int print_int(int i)
 		write(1, &i, 1);
 	}
 }
+ /** 
+ * print_percent - prints a percent sign
+ * @args: argument list
  */
+int print_percent(va_list args)
+{
+	(void)args;
+	write(1, "%", 1);
+	return (1);
+}

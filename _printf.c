@@ -18,6 +18,7 @@ int _printf(const char *format, ...)
 	Specifier SpeciArray[] = {
 		{'c', print_char},
 		{'s', print_str},
+		{'%', print_percent},
 		{'\0', NULL}
 		/**{'d', print_dec},
 		{'i', print_int}*/
