@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # **C - printf**
 
 
@@ -40,7 +41,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 _printf.c
 
-Version langage : je pense 99
+Version langage : git version 2.50.1 (Apple Git-155)
 
 ## **Her functions**
 
