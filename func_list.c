@@ -15,7 +15,7 @@ int print_char(va_list args)
 
 /**
  * print_str - prints a string
- * @format: string to print
+ * string: string to print
  */
 int print_str(va_list string)
 {
@@ -73,6 +73,10 @@ int print_int(int i)
 }
     return (0);
 	*/
+/** 
+ * print_percent - prints a percent sign
+ * @args: variadic arguments (not used)
+ */
 int print_percent(va_list args)
 {
 	(void)args;
