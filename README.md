@@ -3,8 +3,8 @@
 
 ## **Description** 
 This project is a simulation of the printf function in C with its most important features, it was made in the software development program of [Holberton](https://www.holbertonschool.com/).
-### **description de la fonction printf**
-La fonction printf() formate et imprime une série de caractères et de valeurs dans le flux de sortie standard stdout . Les spécifications de format, commençant par le signe de pourcentage (%), déterminent le format de sortie pour toute liste d'arguments suivant la chaîne de format.
+### **description of the printf function**
+The printf function formats and prints a series of characters and values to the standard output stream, stdout. The format specifications, beginning with the percent sign (%), determine the output format for each argument in the list that follows the format string.
 ## **compilation**
 we will compile the code using this command
 ```bash
@@ -35,8 +35,6 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 **5. File Endings:** Ensure that all source code files (.c files) end with a newline character (\n).
 
 **6. Header Inclusion:** Include the "main.h" header file in all .c files to access necessary declarations and definitions.
-
-## **Her functions**
 
 ## **Flowchart**
 
