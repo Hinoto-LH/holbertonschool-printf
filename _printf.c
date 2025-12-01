@@ -4,8 +4,7 @@
 #include <stdlib.h>
 /**
 * _printf - function that print
-* @format: dscd
-* Return: cbjhsdbdcsd
+* Return: return count
 */
 int _printf(const char *format, ...)
 {
@@ -36,7 +35,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[index] == '%')
 		{
-			index++; /** pour passer au character suivant */
+			index++; 
 			
 			for (j = 0; SpeciArray[j].Choise != '\0'; j++)
 			{
