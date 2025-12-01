@@ -37,6 +37,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 **6. Header Inclusion:** Include the "main.h" header file in all .c files to access necessary declarations and definitions.
 
 ## **Flowchart**
+<img width="491" height="962" alt="Diagramme sans nom" src="https://github.com/user-attachments/assets/da1601f1-c025-4eb9-8708-a8ed6a66af30" />
 
 
 ## **Example Usage**
