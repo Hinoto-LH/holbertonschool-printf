@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # **C - printf**
 
 
@@ -36,12 +35,6 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 **5. File Endings:** Ensure that all source code files (.c files) end with a newline character (\n).
 
 **6. Header Inclusion:** Include the "main.h" header file in all .c files to access necessary declarations and definitions.
-
-### **Requirements for the function**
-
-_printf.c
-
-Version langage : git version 2.50.1 (Apple Git-155)
 
 ## **Her functions**
 
@@ -110,8 +103,5 @@ Unsigned octalCreate a Printf Function
 ```
 ## **BUGS**
 
-Currently  _printf can print the chars, the strings and the “%”, note that we are too NULL
-to develop more features for our function, if you wish to display more content (for example : %f for float) please use the reel printf function.
-Her functions :
-
+Currently  _printf can print the chars, the strings and the “%”,
 
